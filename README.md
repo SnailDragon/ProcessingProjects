@@ -3,7 +3,7 @@ A repository of my new generative art projects created in processing
 
 --Not including projects finished before Oct 1 2021--
 
-# Projects
+## Projects
 
 Wonky Orbits - circles circling circles with the center circle circling the path created by something like r = cos(.5 * theta). Video: https://youtu.be/K9ZYQq7PilY
 
