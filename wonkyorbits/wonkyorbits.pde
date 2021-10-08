@@ -2,7 +2,7 @@ boolean useTrace = false;
 int numOrbits = 4;
 float[][] layerOffsets;
 int maxOffsets;
-//use this one
+
 void setup(){
   size(1920,1080);
   background(0);
