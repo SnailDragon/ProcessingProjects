@@ -1,7 +1,0 @@
-
-class ReflectingOrbs {
-  
-  public ReflectingOrbs(){
-    
-  }
-}

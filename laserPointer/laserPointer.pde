@@ -3,7 +3,7 @@ float dx = 1;
 float dy = 1;
 
 void setup(){
-  size(860,540);
+  size(1920,1080);
   background(0);
   
 }
@@ -20,7 +20,7 @@ void draw(){
 
 void drawLaser(int posX, int posY, float orientation){
   float[] xy = {posX,posY};
-  for(int i = 0; i < 8000; i++){
+  for(int i = 0; i < 16000; i++){
     xy = drawLineFromAngle(xy[0],xy[1], orientation);
     if(xy[0] > width || xy[0] < 0){
       dx *= -1;
