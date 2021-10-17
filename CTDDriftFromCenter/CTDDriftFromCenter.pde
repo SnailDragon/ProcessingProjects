@@ -55,6 +55,7 @@ void draw(){
     }
   }
   println(frameRate);
+  frameRate(24);
 }
 
 float Distance(float[] pointA, float[] pointB){
@@ -65,9 +66,13 @@ void DriftOutCenter(){
   for(int i = 0; i < dots.length; ++i){
     float vectorx = dots[i][0] - width/2;
     float vectory = dots[i][1] - height/2;
+    float unitVectorX = vectorx / sqrt(pow(vectorx, 2) + pow(vectory, 2));
+    float unitVectorY = vectory / sqrt(pow(vectorx, 2) + pow(vectory, 2));
+    float xdrift = unitVectorX * DRIFT + vectorx/30;
+    float ydrift = unitVectorY * DRIFT + vectory/30;
     
-    dots[i][0] += random(vectorx / 30);
-    dots[i][1] += random(vectory / 30);   
+    dots[i][0] += random(xdrift); // vectorx / 30 
+    dots[i][1] += random(ydrift);   
     
     if(dots[i][0] > width-border){
       dots[i][0] = width-border;
