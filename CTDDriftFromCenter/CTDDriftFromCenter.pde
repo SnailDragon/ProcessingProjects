@@ -1,9 +1,11 @@
 float[][] dots;
-int NUM_DOTS = 1000;
+int NUM_DOTS = 100;
 float STROKE_WEIGHT = .5;
-float DOT_RAD = 1;
+float DOT_RAD = 5;
 float DRIFT = 1;
-float CONNECT_DIST = 40;
+float CONNECT_DIST = 70;
+int border = 10;
+float startBox = 40;
 
 
 void setup(){
@@ -35,11 +37,8 @@ void setup(){
 void draw(){
   background(0);
   
-  //Drift();
-  //DriftToCorner();
-  //MiddleLine();
-  //DriftToSide();
   DriftOutCenter();
+  RecycleDots();
   
   for(float[] c : dots){
     fill(255);
@@ -58,6 +57,10 @@ void draw(){
   println(frameRate);
 }
 
+float Distance(float[] pointA, float[] pointB){
+  return sqrt(pow(pointA[0] - pointB[0], 2) + pow(pointA[1] - pointB[1], 2));
+}
+
 void DriftOutCenter(){
   for(int i = 0; i < dots.length; ++i){
     float vectorx = dots[i][0] - width/2;
@@ -66,7 +69,6 @@ void DriftOutCenter(){
     dots[i][0] += random(vectorx / 30);
     dots[i][1] += random(vectory / 30);   
     
-    int border = 10;
     if(dots[i][0] > width-border){
       dots[i][0] = width-border;
     }
@@ -82,158 +84,33 @@ void DriftOutCenter(){
   }
 }
 
-void DriftToSide(){
-  for(int i = 0; i < dots.length; ++i){
-    switch (ClosestSide(dots[i])){
-      case 0: 
-        dots[i][0] += -random(DRIFT);
-        break;
-      case 1:
-        dots[i][1] += -random(DRIFT);
-        break;
-      case 2: 
-        dots[i][0] += random(DRIFT);
-        break;
-      case 3: 
-        dots[i][1] += random(DRIFT);
-        break;
-      default:
-         dots[i][0] += random(-DRIFT, DRIFT);
-         dots[i][1] += random(-DRIFT, DRIFT);  
-    }
-
+void RecycleDots(){
+  for(int i = 0; i < dots.length; i++){
+    //if((dots[i][0] == border && dots[i][1] == border) || 
+    // (dots[i][0] == border && dots[i][1] == height-border) || 
+    // (dots[i][0] == width-border && dots[i][1] == border) || 
+    // (dots[i][0] == width-border && dots[i][1] == height-border)){
+    //  dots[i][0] = width/2 + random(-startBox, startBox);
+    //  dots[i][1] = height/2 + random(-startBox, startBox);
+    //  println("Recycled");
+    //  //println(dots[i][0] + " " + dots[i][1]);
+    //}
     
-    if(dots[i][0] > width){
-      dots[i][0] = width;
+    if(dots[i][0] == width-border){
+      dots[i][0] = width/2 + random(-startBox, startBox);
+      dots[i][1] = height/2 + random(-startBox, startBox);
     }
-    else if(dots[i][0] < 0){
-      dots[i][0] = 0;
+    else if(dots[i][0] == border){
+      dots[i][0] = width/2 + random(-startBox, startBox);
+      dots[i][1] = height/2 + random(-startBox, startBox);
     }
-    if(dots[i][1] > height){
-      dots[i][1] = height;
+    if(dots[i][1] == height-border){
+      dots[i][0] = width/2 + random(-startBox, startBox);
+      dots[i][1] = height/2 + random(-startBox, startBox);
     }
-    else if(dots[i][1] < 0){
-      dots[i][1] = 0;
-    }
-  }
-}
-
-int ClosestSide(float[] coors){
-  float[] distanceFromSides = {coors[0], coors[1], width-coors[0], height-coors[1]};
-  float min = distanceFromSides[0];
-  int minIndex = 0;
-  for(int i = 0; i < distanceFromSides.length; i++){
-    if(distanceFromSides[i] < min){
-      min = distanceFromSides[i];
-      minIndex = i;
+    else if(dots[i][1] == border){
+      dots[i][0] = width/2 + random(-startBox, startBox);
+      dots[i][1] = height/2 + random(-startBox, startBox);
     }
   }
-  return minIndex;
-}
-
-//by accident
-void MiddleLine(){
-  for(int i = 0; i < dots.length; ++i){
-    switch (CenterLine(dots[i])){
-      case 0: 
-        dots[i][0] += -random(DRIFT);
-        break;
-      case 1:
-        dots[i][1] += -random(DRIFT);
-        break;
-      case 2: 
-        dots[i][0] += random(DRIFT);
-        break;
-      case 3: 
-        dots[i][1] += random(DRIFT);
-        break;
-      default:
-         dots[i][0] += random(-DRIFT, DRIFT);
-         dots[i][1] += random(-DRIFT, DRIFT);  
-    }
-
-    
-    if(dots[i][0] > width){
-      dots[i][0] = width;
-    }
-    else if(dots[i][0] < 0){
-      dots[i][0] = 0;
-    }
-    if(dots[i][1] > height){
-      dots[i][1] = height;
-    }
-    else if(dots[i][1] < 0){
-      dots[i][1] = 0;
-    }
-  }
-}
-
-int CenterLine(float[] coors){
-  float[] distanceFromSides = {coors[0], coors[1], width-coors[0], height-coors[1]};
-  float max = distanceFromSides[0];
-  int maxIndex = 0;
-  for(int i = 0; i < distanceFromSides.length; i++){
-    if(distanceFromSides[i] > max){
-      max = distanceFromSides[i];
-      maxIndex = i;
-    }
-    
-  }
- 
-  return maxIndex;
-}
-
-float Distance(float[] pointA, float[] pointB){
-  return sqrt(pow(pointA[0] - pointB[0], 2) + pow(pointA[1] - pointB[1], 2));
-}
-
-void Drift(){
-  for(int i = 0; i < dots.length; ++i){
-    dots[i][0] += random(-DRIFT, DRIFT);
-    dots[i][1] += random(-DRIFT, DRIFT);
-    if(dots[i][0] > width){
-      dots[i][0] = width;
-    }
-    else if(dots[i][0] < 0){
-      dots[i][0] = 0;
-    }
-    if(dots[i][1] > height){
-      dots[i][1] = height;
-    }
-    else if(dots[i][1] < 0){
-      dots[i][1] = 0;
-    }
-  }
-}
-
-void DriftToCorner(){
-  for(int i = 0; i < dots.length; ++i){
-    dots[i][0] += ChooseSide(dots[i][0], 'x') * random(DRIFT);
-    dots[i][1] += ChooseSide(dots[i][1], 'y') * random(DRIFT);
-    if(dots[i][0] > width){
-      dots[i][0] = width;
-    }
-    else if(dots[i][0] < 0){
-      dots[i][0] = 0;
-    }
-    if(dots[i][1] > height){
-      dots[i][1] = height;
-    }
-    else if(dots[i][1] < 0){
-      dots[i][1] = 0;
-    }
-  }
-}
-
-int ChooseSide(float coor, char whichCoor){
-  if(whichCoor == 'x'){
-    if(coor < width/2) return -1;
-    else return 1;
-  }
-  if(whichCoor == 'y'){
-    if(coor < height/2) return -1;
-    else return 1;
-  }
-  return 0;
-  
 }
