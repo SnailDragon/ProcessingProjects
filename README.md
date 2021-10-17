@@ -16,3 +16,10 @@ Too Many Orbits - same as Wonky Orbits but with more circles orbiting each circl
 Laser Pointer (16000) - a terminating line (16000 mini-segments) that reflects off the walls starting from the center. Video: https://www.youtube.com/watch?v=jiLxZkUr6dA 
 
 Random Connnect The Dots - a given number of dots are generated and then they are connected to their neighbors. Image generation concept for future videos.
+
+rCTDDrift - a collection of very similar projects (all built on the Random Connect The Dots Project): 
+* Dots Out of Center (video soon) 
+* Connect The Dots Wisp (video soon)
+* Drifting Connect The Dots (video soon)
+* Drifting To The Sides
+* and Middle Line (Fast)
