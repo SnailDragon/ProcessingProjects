@@ -5,8 +5,7 @@ A repository of my new generative art projects created in processing
 
 ## Projects
 
-### Orbits on Orbits
-base project for other orbit-themed projects. Honestly a mess. Video: none. 
+Orbits on Orbits - base project for other orbit-themed projects. Honestly a mess. Video: none. 
 
 Wonky Orbits - circles circling circles with the center circle circling the path created by something like r = cos(.5 * theta). Video: https://youtu.be/K9ZYQq7PilY
 
