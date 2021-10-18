@@ -1,11 +1,11 @@
 float[][] dots;
-int NUM_DOTS = 100;
+int NUM_DOTS = 150;
 float STROKE_WEIGHT = .5;
 float DOT_RAD = 5;
 float DRIFT = 1;
-float CONNECT_DIST = 70;
-int border = 10;
-float startBox = 40;
+float CONNECT_DIST = 100; //70
+int BORDER = 10;
+float START_BOX = 40;
 
 
 void setup(){
@@ -13,8 +13,8 @@ void setup(){
   background(0);
   dots = new float[NUM_DOTS][2];
   for(int i = 0; i < dots.length; ++i){
-    dots[i][0] = random(width);
-    dots[i][1] = random(height);
+    dots[i][0] = random(width); //random(width / 2 - START_BOX, width / 2 + START_BOX); 
+    dots[i][1] = random(height); //random(height / 2 - START_BOX, height / 2 + START_BOX); 
   }
   
   for(float[] c : dots){
@@ -71,51 +71,51 @@ void DriftOutCenter(){
     float xdrift = unitVectorX * DRIFT + vectorx/30;
     float ydrift = unitVectorY * DRIFT + vectory/30;
     
-    dots[i][0] += random(xdrift); // vectorx / 30 
-    dots[i][1] += random(ydrift);   
+    dots[i][0] += xdrift/2; //random(xdrift); // vectorx / 30 
+    dots[i][1] += ydrift/2; //random(ydrift);   
     
-    if(dots[i][0] > width-border){
-      dots[i][0] = width-border;
+    if(dots[i][0] > width-BORDER){
+      dots[i][0] = width-BORDER;
     }
-    else if(dots[i][0] < border){
-      dots[i][0] = border;
+    else if(dots[i][0] < BORDER){
+      dots[i][0] = BORDER;
     }
-    if(dots[i][1] > height-border){
-      dots[i][1] = height-border;
+    if(dots[i][1] > height-BORDER){
+      dots[i][1] = height-BORDER;
     }
-    else if(dots[i][1] < border){
-      dots[i][1] = border;
+    else if(dots[i][1] < BORDER){
+      dots[i][1] = BORDER;
     }
   }
 }
 
 void RecycleDots(){
   for(int i = 0; i < dots.length; i++){
-    //if((dots[i][0] == border && dots[i][1] == border) || 
-    // (dots[i][0] == border && dots[i][1] == height-border) || 
-    // (dots[i][0] == width-border && dots[i][1] == border) || 
-    // (dots[i][0] == width-border && dots[i][1] == height-border)){
-    //  dots[i][0] = width/2 + random(-startBox, startBox);
-    //  dots[i][1] = height/2 + random(-startBox, startBox);
+    //if((dots[i][0] == BORDER && dots[i][1] == BORDER) || 
+    // (dots[i][0] == BORDER && dots[i][1] == height-BORDER) || 
+    // (dots[i][0] == width-BORDER && dots[i][1] == BORDER) || 
+    // (dots[i][0] == width-BORDER && dots[i][1] == height-BORDER)){
+    //  dots[i][0] = width/2 + random(-START_BOX, START_BOX);
+    //  dots[i][1] = height/2 + random(-START_BOX, START_BOX);
     //  println("Recycled");
     //  //println(dots[i][0] + " " + dots[i][1]);
     //}
     
-    if(dots[i][0] == width-border){
-      dots[i][0] = width/2 + random(-startBox, startBox);
-      dots[i][1] = height/2 + random(-startBox, startBox);
+    if(dots[i][0] == width-BORDER){
+      dots[i][0] = width/2 + random(-START_BOX, START_BOX);
+      dots[i][1] = height/2 + random(-START_BOX, START_BOX);
     }
-    else if(dots[i][0] == border){
-      dots[i][0] = width/2 + random(-startBox, startBox);
-      dots[i][1] = height/2 + random(-startBox, startBox);
+    else if(dots[i][0] == BORDER){
+      dots[i][0] = width/2 + random(-START_BOX, START_BOX);
+      dots[i][1] = height/2 + random(-START_BOX, START_BOX);
     }
-    if(dots[i][1] == height-border){
-      dots[i][0] = width/2 + random(-startBox, startBox);
-      dots[i][1] = height/2 + random(-startBox, startBox);
+    if(dots[i][1] == height-BORDER){
+      dots[i][0] = width/2 + random(-START_BOX, START_BOX);
+      dots[i][1] = height/2 + random(-START_BOX, START_BOX);
     }
-    else if(dots[i][1] == border){
-      dots[i][0] = width/2 + random(-startBox, startBox);
-      dots[i][1] = height/2 + random(-startBox, startBox);
+    else if(dots[i][1] == BORDER){
+      dots[i][0] = width/2 + random(-START_BOX, START_BOX);
+      dots[i][1] = height/2 + random(-START_BOX, START_BOX);
     }
   }
 }
