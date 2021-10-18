@@ -23,3 +23,5 @@ rCTDDrift - a collection of very similar projects (all built on the Random Conne
 * Drifting Connect The Dots (video: https://youtu.be/uCk78jwzZOs)
 * Drifting To The Sides (video: https://youtu.be/NgFVnrh4aJc)
 * Middle Line (Fast) (video: https://youtu.be/r49vz-vzrAE and https://youtu.be/ZZR0Wgvguno)
+
+CTD Drift From Center - variant of the Random Connect The Dots project - recycling version of Dots Out of Center. Video: https://youtu.be/P6eO3NCH-6U
