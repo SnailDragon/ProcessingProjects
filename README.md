@@ -25,3 +25,5 @@ rCTDDrift - a collection of very similar projects (all built on the Random Conne
 * Middle Line (Fast) (video: https://youtu.be/r49vz-vzrAE and https://youtu.be/ZZR0Wgvguno)
 
 CTD Drift From Center - variant of the Random Connect The Dots project - recycling version of Dots Out of Center. Video: https://youtu.be/P6eO3NCH-6U
+
+Spreading Pixels - randomly generated grid of colors, every frame it randomly selects 5 boxes that have different colors ajacent to them and expands their color to the 4 boxes on each side (no diagonal). Video: https://youtu.be/1FTefi0TnVY 
