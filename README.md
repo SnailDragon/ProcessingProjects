@@ -28,6 +28,6 @@ CTD Drift From Center - variant of the Random Connect The Dots project - recycli
 
 Spreading Pixels - randomly generated grid of colors, every frame it randomly selects 5 boxes that have different colors ajacent to them and expands their color to the 4 boxes on each side (no diagonal). Video: https://youtu.be/1FTefi0TnVY 
 
-Dancing Islands - Spreading Pixels but with too many pixels for any to win and only two colors green (the islands) and blue (the ocean). Video: 
+Dancing Islands - Spreading Pixels but with too many pixels for any to win and only two colors green (the islands) and blue (the ocean). Video: https://youtu.be/jHJoBTvOhfI
 
-Conquering Pixels - randomly spreads pixels out in a solid color and then expands them using the spreading pixel method until they cover the screen, then it randomly spreads another color and repeats. (Also the blue/red is an example of Chromostereopsis - https://en.wikipedia.org/wiki/Chromostereopsis). Video: soon
+Conquering Pixels (Pulsing Colors) - randomly spreads pixels out in a solid color and then expands them using the spreading pixel method until they cover the screen, then it randomly spreads another color and repeats. (Also the blue/red is an example of chromostereopsis - https://en.wikipedia.org/wiki/Chromostereopsis). Video: https://youtu.be/7ugP48Gb2-c
