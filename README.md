@@ -32,4 +32,4 @@ Dancing Islands - Spreading Pixels but with too many pixels for any to win and o
 
 Conquering Pixels (Pulsing Colors) - randomly spreads pixels out in a solid color and then expands them using the spreading pixel method until they cover the screen, then it randomly spreads another color and repeats. (Also the blue/red is an example of chromostereopsis - https://en.wikipedia.org/wiki/Chromostereopsis). Video: https://youtu.be/7ugP48Gb2-c
 
-Lissajous Curve - basic project is a lissajous curve (https://en.wikipedia.org/wiki/Lissajous_curve) with the parametric --> x = A * sin(a*t+c) y = B * sin(b*t) (t = i) increasing the 'c' value. Lissajous Curve 1 manipulates the other variables as well. Videos: 
+Lissajous Curve - basic project is a lissajous curve (https://en.wikipedia.org/wiki/Lissajous_curve) with the parametric --> x = A * sin(a*t+c) y = B * sin(b*t) (t = i) increasing the 'c' value. Lissajous Curve 1 manipulates the other variables as well. Videos: https://youtu.be/8zjWcnMuFd0 and https://youtu.be/Y7pMGQIZLps
