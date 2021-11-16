@@ -38,4 +38,4 @@ Agario - dots that wander and combine. Unfinished
 
 Image Manipulation - folder to practice image manipulation. Unfinished
 
-Star Trails - Animation imitating a video of stars throughout the night with long exposures, but rotating forever. 
+Star Trails - Animation imitating the style produced when photos are taken of stars throughout the night using long exposures, rotating forever. Video: https://youtu.be/_aBD7zjS9sc 
