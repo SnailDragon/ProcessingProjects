@@ -39,3 +39,6 @@ Agario - dots that wander and combine. Unfinished
 Image Manipulation - folder to practice image manipulation. Unfinished
 
 Star Trails - Animation imitating the style produced when photos are taken of stars throughout the night using long exposures, rotating forever. Video: https://youtu.be/_aBD7zjS9sc 
+
+Circles and Rings - Circles are placed in random locations and rings are drawn around them until a ring will overlap another circle's ring or go off the screen. 
+* Circles and Rings Oscillating - instead of stopping when a ring overlaps or goes out of bound, the rings contract until the circle/ring is gone.
