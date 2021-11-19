@@ -67,4 +67,6 @@ void draw(){
   println(frameRate);
   println(it);
   
+  //saveFrame("zcro-########.png");
+  
 }
