@@ -44,6 +44,11 @@ Star Trails - Animation imitating the style produced when photos are taken of st
 Circles and Rings - Circles are placed in random locations and rings are drawn around them until a ring will overlap another circle's ring or go off the screen. Video: https://youtu.be/tEbOOEOPkAg 
 * Circles and Rings Oscillating (Circles and Rings Changing) - instead of stopping when a ring overlaps or goes out of bound, the rings contract until the circle/ring is gone. Video: https://youtu.be/b-7gQeBZHBI 
 
+Rectangle Borders - same as Circles and Rings but with rectangles of varying dimensions. Video: 
+* Rectangle Borders Changing - Video:
+
 Averaging Grid - a matrix of a normal int value (#000000 or 0) is seeded with a number of constants of a differing value (#FFFFFF or 255). Then the grid is averaged with each cell being the average of its neighbors. The constants can later be phased out.
 * Averaging Grid Single - a single constant in the middle of the canvas that is phased out. Video: https://youtu.be/BgDL5DJ-pjQ 
 * Averaging Grid (Averaging Color Grid) - multiple constats in random locations on the screen that are phased out. Video: https://youtu.be/wLTSLwzzCjg 
+
+
