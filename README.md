@@ -4,6 +4,7 @@ A repository of my new generative art projects created in processing
 --Not including projects finished before Oct 1 2021--
 
 ## Projects
+(_oldGeneratedArt - this is from before I was organized, if you can't find a project in the README it's probably there)
 
 Orbits on Orbits - base project for other orbit-themed projects. Honestly a mess. Video: none. 
 
