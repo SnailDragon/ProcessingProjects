@@ -44,7 +44,7 @@ rCTDDrift - a collection of very similar projects (all built on the Random Conne
 * Drifting Connect The Dots (video: https://youtu.be/uCk78jwzZOs)
 * Drifting To The Sides (video: https://youtu.be/NgFVnrh4aJc)
 * Middle Line (Fast) (video: https://youtu.be/r49vz-vzrAE and https://youtu.be/ZZR0Wgvguno)
-* Connect The Dots Bouncing (CTDBouncing) (video: )
+* Connect The Dots Bouncing (CTDBouncing) (video: https://youtu.be/7p-4mTSvXVM)
 
 Rectangle Borders - same as Circles and Rings but with rectangles of varying dimensions. Video: https://youtu.be/bfsLtpVNjuI 
 * Rectangle Borders Changing - Video: https://youtu.be/XlgWbKK2J9o
