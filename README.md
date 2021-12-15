@@ -49,6 +49,8 @@ rCTDDrift - a collection of very similar projects (all built on the Random Conne
 Rectangle Borders - same as Circles and Rings but with rectangles of varying dimensions. Video: https://youtu.be/bfsLtpVNjuI 
 * Rectangle Borders Changing - Video: https://youtu.be/XlgWbKK2J9o
 
+Snowing Build Up - randomly generated snowflakes fall and build up at the bottom. Video: https://youtu.be/IY_xDrwEOgk
+
 Spreading Pixels - randomly generated grid of colors, every frame it randomly selects 5 boxes that have different colors ajacent to them and expands their color to the 4 boxes on each side (no diagonal). Video: https://youtu.be/1FTefi0TnVY 
 
 Star Trails - Animation imitating the style produced when photos are taken of stars throughout the night using long exposures, rotating forever. Video: https://youtu.be/_aBD7zjS9sc 
