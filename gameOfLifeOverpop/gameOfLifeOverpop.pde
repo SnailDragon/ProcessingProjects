@@ -23,17 +23,15 @@ void draw(){
   
   background(0);
   DrawGrid(board);
-  
-  int[][] oldBoard = board;  
-  
+    
   for(int i = 0; i < board.length; i++){
     for(int j = 0; j < board[0].length; j++){
-      int count = GetSurrounding(oldBoard, i, j);
+      int count = GetSurrounding(board, i, j);
       if(count < 2) {
         board[i][j] = #000000;
       }
       else if(count < 3){
-        board[i][j] = oldBoard[i][j];
+        board[i][j] = board[i][j];
       }
       else if(count == 3){
         board[i][j] = #FFFFFF;
