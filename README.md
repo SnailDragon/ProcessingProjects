@@ -26,7 +26,7 @@ Dancing Islands - Spreading Pixels but with too many pixels for any to win and o
 Game of Life - projects based on Conway's Game of Life and adding new rules and twists.
 * Game of Life - basic rules
 * Game of Life Hexes - similar to basic rules but with hexagons - unfinished
-* Game of Life Overpop (Spreading Stripes) - basic rules but the grid is modified and updated after each modification
+* Game of Life Overpop (Spreading Stripes) - basic rules but the grid is modified and updated after each modification. Video: https://youtu.be/-9KzASJ-6mA 
 * Game of Life Triangles - similar to basic rules but with triangles - unfinished 
 
 Image Manipulation - folder to practice image manipulation. Unfinished
