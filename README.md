@@ -23,6 +23,12 @@ CTD Drift From Center - variant of the Random Connect The Dots project - recycli
 
 Dancing Islands - Spreading Pixels but with too many pixels for any to win and only two colors green (the islands) and blue (the ocean). Video: https://youtu.be/jHJoBTvOhfI
 
+Game of Life - projects based on Conway's Game of Life and adding new rules and twists.
+* Game of Life - basic rules
+* Game of Life Hexes - similar to basic rules but with hexagons - unfinished
+* Game of Life Overpop (Spreading Stripes) - basic rules but the grid is modified and updated after each modification
+* Game of Life Triangles - similar to basic rules but with triangles - unfinished 
+
 Image Manipulation - folder to practice image manipulation. Unfinished
 
 Laser Pointer (16000) - a terminating line (16000 mini-segments) that reflects off the walls starting from the center. Video: https://youtu.be/jiLxZkUr6dA
