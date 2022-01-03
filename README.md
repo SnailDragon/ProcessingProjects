@@ -29,6 +29,8 @@ Game of Life - projects based on Conway's Game of Life and adding new rules and 
 * Game of Life Overpop (Spreading Stripes) - basic rules but the grid is modified and updated after each modification. Video: https://youtu.be/-9KzASJ-6mA 
 * Game of Life Triangles - similar to basic rules but with triangles - unfinished 
 
+Genuary - a month of generated art challenges (genuary.art) - see README in folder
+
 Image Manipulation - folder to practice image manipulation. Unfinished
 
 Laser Pointer (16000) - a terminating line (16000 mini-segments) that reflects off the walls starting from the center. Video: https://youtu.be/jiLxZkUr6dA
