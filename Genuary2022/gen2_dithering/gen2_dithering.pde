@@ -1,0 +1,47 @@
+PImage img;
+
+//my interpretation of dithering - not exactly the same as described but a similar concept
+
+void setup(){
+	size(920,540);
+	background(0);
+	img = loadImage("brooklynbridge.jpg");
+	
+	img.loadPixels();
+	//for(int i = 0; i < img.pixels.length; i++){
+		//float r = red(img.pixels[i]);
+		//float g = green(img.pixels[i]);
+		//float b = blue(img.pixels[i]);
+		//float grey = (r + g + b) / 2.0;
+		//img.pixels[i] = color(grey, grey, grey);	
+		//if(grey < 255/2.0) img.pixels[i] = #000000;
+		//else img.pixels[i] = #FFFFFF;
+		//if(img.pixels[i] == #FFFFFF || img.pixels[i] == #000000) continue;
+	//	if(random(brightness(img.pixels[i])) < 255/3.0) img.pixels[i] = #000000;
+	//	else img.pixels[i] = #FFFFFF;
+	//}
+}
+
+int it = 0;
+void draw(){
+	img.loadPixels();	
+	//if(random(brightness(img.pixels[it])) < 255/3.0) img.pixels[it] = #000000;
+	//else img.pixels[it] = #FFFFFF;
+	if(it < img.pixels.length - width*3){	
+		for(int i = 0; i < width*3; i++){
+			if(img.pixels[it] == #FFFFFF || img.pixels[it] == #000000){
+				it++;
+				continue;
+				}	
+			if(random(brightness(img.pixels[it])) < 255/2.0) img.pixels[it] = #000000;
+			else img.pixels[it] = #FFFFFF;
+			it++;
+		}
+	}
+	img.updatePixels();
+	image(img, (width - (((float)img.width/img.height) * height)) / 2, 0, ((float)img.width/img.height) * height, height);
+	
+	println(frameRate);	
+}
+
+

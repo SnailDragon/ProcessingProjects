@@ -35,3 +35,11 @@ void DrawTriangles(int[][] triangles){
     }
   }
 }
+
+void Hexagon(float x, float y, float r){
+  beginShape();
+  for(float i = 0; i < 2*PI; i += (2*PI)/6){
+    vertex(x+ r * cos(i), y + r * sin(i));
+  }
+  endShape();
+}
