@@ -42,8 +42,6 @@ More Wonky Orbits - same as Wonky Orbits but with all of the circles circling wi
 
 Orbits on Orbits - base project for other orbit-themed projects. Honestly a mess. Video: none. 
 
-Wonky Orbits - circles circling circles with the center circle circling the path created by something like r = cos(.5 * theta). Video: https://youtu.be/K9ZYQq7PilY
-
 Random Connnect The Dots - a given number of dots are generated and then they are connected to their neighbors. Image generation concept for future videos.
 
 rCTDDrift - a collection of very similar projects (all built on the Random Connect The Dots Project): 
@@ -65,5 +63,8 @@ Star Trails - Animation imitating the style produced when photos are taken of st
 
 Too Many Orbits - same as Wonky Orbits but with more circles orbiting each circle. Video: https://youtu.be/YoZxNnHlHOU and https://youtu.be/koUqfKm1EHA (with tracing enabled)
 
+Vector Field - A vector field with each vector rotating at a speed based on where it is in the field. Video: https://youtu.be/t-w4YcIibU4
+
+Wonky Orbits - circles circling circles with the center circle circling the path created by something like r = cos(.5 * theta). Video: https://youtu.be/K9ZYQq7PilY
 
 
