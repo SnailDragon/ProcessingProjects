@@ -6,11 +6,16 @@ A repository of my new generative art projects created in processing
 ## Projects
 (_oldGeneratedArt - this is from before I was organized, if you can't find a project in the README it's probably there)
 
+(_turtleDrawing - folder of projects that use the turtle drawing method)
+
 Agario - dots that wander and combine. Unfinished
 
 Averaging Grid - a matrix of a normal int value (#000000 or 0) is seeded with a number of constants of a differing value (#FFFFFF or 255). Then the grid is averaged with each cell being the average of its neighbors. The constants can later be phased out.
 * Averaging Grid Single - a single constant in the middle of the canvas that is phased out. Video: https://youtu.be/BgDL5DJ-pjQ 
 * Averaging Grid (Averaging Color Grid) - multiple constats in random locations on the screen that are phased out. Video: https://youtu.be/wLTSLwzzCjg 
+
+Bouncing Balls - circles that bounce off the walls
+* modified to Bouncing Line - doesn't erase where the balls have been
 
 Circles and Rings - Circles are placed in random locations and rings are drawn around them until a ring will overlap another circle's ring or go off the screen. Video: https://youtu.be/tEbOOEOPkAg 
 * Circles and Rings Oscillating (Circles and Rings Changing) - instead of stopping when a ring overlaps or goes out of bound, the rings contract until the circle/ring is gone. Video: https://youtu.be/b-7gQeBZHBI 
@@ -32,6 +37,8 @@ Game of Life - projects based on Conway's Game of Life and adding new rules and 
 Genuary - a month of generated art challenges (genuary.art) - see README in folder
 
 Image Manipulation - folder to practice image manipulation. Unfinished
+
+Intro Physics - a hot mess
 
 Laser Pointer (16000) - a terminating line (16000 mini-segments) that reflects off the walls starting from the center. Video: https://youtu.be/jiLxZkUr6dA
 
@@ -62,6 +69,8 @@ Spreading Pixels - randomly generated grid of colors, every frame it randomly se
 Star Trails - Animation imitating the style produced when photos are taken of stars throughout the night using long exposures, rotating forever. Video: https://youtu.be/_aBD7zjS9sc 
 
 Too Many Orbits - same as Wonky Orbits but with more circles orbiting each circle. Video: https://youtu.be/YoZxNnHlHOU and https://youtu.be/koUqfKm1EHA (with tracing enabled)
+
+Tunnel Falling - should look like you are falling down a tunnel - doesn't - unfinished
 
 Vector Field - A vector field with each vector rotating at a speed based on where it is in the field. Video: https://youtu.be/t-w4YcIibU4
 

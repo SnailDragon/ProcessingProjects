@@ -1,45 +1,56 @@
-int[][] board = new int[10][(int)(10.0*(520.0/960.0))];
+int[][] hexes;
+int HEXCOUNT = height/10;
 
-int NUM_SEED = 5;
 
 void setup(){
-  size(960,520);
-  background(0);
-  stroke(255);
-  
-  for(int i = 0; i < board.length; i++){
-    for(int j = 0; j < board[0].length; j++){
-      board[i][j] = #000000;
-    }
-  }
-  
-  for(int i = 0; i < NUM_SEED; i++){
-    board[(int)random(board.length)][(int)random(board[0].length)] = #FFFFFF;
-  }
+	size(960,540);
+	background(100);
+	fill(0);
+	stroke(0);
+	println(HEXCOUNT);
+	println(HEXCOUNT * ((float)width/height));
+	println(width/height);
+	hexes = new int[ceil(HEXCOUNT * ((float)width/height))][HEXCOUNT];
+	println(hexes.length);
+	println(hexes[0].length);
+	for(int i = 0; i < hexes.length; i++){
+		for (int j = 0; j < hexes[0].length; j++){
+			hexes[i][j] = #0000FF;
+		}
+	}
+	
+
 }
+
 
 void draw(){
-  
-  DrawTriangles(board);
+	background(100);
+	DisplayHexes(hexes);
+	
+
 }
 
-void DrawTriangles(int[][] triangles){
-  float wdim = width / (float)triangles.length;
-  float hdim = height / (float)triangles[0].length;
-  for(int i = 0; i < triangles.length; i++){
-    for(int j = 0; j < triangles[0].length; j++){
-      fill(triangles[i][j]);
-      
-      if(j % 2 == 0) triangle((i)*wdim, (j)*hdim, (i+1)*wdim, (j)*hdim, (i+.5)*wdim, (j+1)*hdim);
-      else triangle((i+1)*wdim, (j-1)*hdim, (i+0.5)*wdim, (j)*hdim, (i+1.5)*wdim, (j)*hdim);
-    }
-  }
+void DisplayHexes(int[][] hexes){
+	float yit = height / hexes[0].length;
+	float xit = width / hexes.length;
+
+	for(int i = 0; i < hexes.length; i++){
+		for (int j = 0; j < hexes[0].length; j++){
+			fill(hexes[i][j]);
+			if (i % 2 == 0) hexagon((i+0.5) * xit,(j+0.5) * yit,yit);
+			else hexagon((i+0.5) * xit, (j+1) * yit, yit);
+		}
+	}
 }
 
-void Hexagon(float x, float y, float r){
-  beginShape();
-  for(float i = 0; i < 2*PI; i += (2*PI)/6){
-    vertex(x+ r * cos(i), y + r * sin(i));
-  }
-  endShape();
+void hexagon(float x, float y, float h){
+	beginShape();
+
+	h = h/2 / cos(PI/6); 	
+	for(float i = PI/6+PI/2; i < 2*PI+PI/6+PI/2; i += (2*PI)/6){
+		vertex(x + h * cos(i), y + h * sin(i));
+	}
+	endShape(); 
+
 }
+	
