@@ -14,6 +14,8 @@ Averaging Grid - a matrix of a normal int value (#000000 or 0) is seeded with a 
 * Averaging Grid Single - a single constant in the middle of the canvas that is phased out. Video: https://youtu.be/BgDL5DJ-pjQ 
 * Averaging Grid (Averaging Color Grid) - multiple constats in random locations on the screen that are phased out. Video: https://youtu.be/wLTSLwzzCjg 
 
+Blue Sweep - a sweeping semi-transparent blue triangle that changes width and alternates with a black triangle. Video: https://youtu.be/JXxlWly6DBs 
+
 Bouncing Balls - circles that bounce off the walls
 * modified to Bouncing Line - doesn't erase where the balls have been
 
