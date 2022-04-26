@@ -1,34 +1,3 @@
-// IDEA - cityscape on a circle - 
-//loops around and draws a new one again and again
-
-RadCircle circ; 
-
-void setup(){
-  size(960,540);
-  background(0);
-  
-  circ = new RadCircle(1, 100);
-}
-
-float it = 0;
-void draw(){
-  //wiper
-  background(0);
-  circ.display();
-  
-  circ.shiftFront((25 * mod1(it) + abs(150*mod2(it))+100) / 1.4);
-  it += PI / 10;
-  //println(frameRate);
-}
-
-float mod1(float num){
-  return cos(num) + sin(num / pow(1.001, num));
-}
-
-float mod2(float num){
-  return cos(num / 100);
-}
-
 class RadCircle {
   
   ArrayList<Float> lens;
@@ -64,10 +33,10 @@ class RadCircle {
   }
   
   void display(){
-    for(float i : cols){
-      print(i + " ");
-    }
-    println();
+    //for(float i : lens){
+    //  print(i + " ");
+    //}
+    //println();
     fill(255);
     translate(cx, cy);
     for(int i = 0; i < lens.size()-1; i++){
