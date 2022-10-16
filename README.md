@@ -63,6 +63,9 @@ A given number of dots are generated and then they are connected to their neighb
 Same as Circles and Rings but with rectangles of varying dimensions. Video: https://youtu.be/bfsLtpVNjuI 
 * [Rectangle Borders Changing](/rectangleBordersChanging/) - Video: https://youtu.be/XlgWbKK2J9o
 
+## [Ripples](/ripples/)
+Ripples made from expanding dot circles that get deleted when they collect. Video: 
+
 ## [Snowing Build Up](/snowingBuildUp/)
 Randomly generated snowflakes fall and build up at the bottom. Video: https://youtu.be/IY_xDrwEOgk
 
