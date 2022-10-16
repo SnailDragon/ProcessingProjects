@@ -64,7 +64,7 @@ Same as Circles and Rings but with rectangles of varying dimensions. Video: http
 * [Rectangle Borders Changing](/rectangleBordersChanging/) - Video: https://youtu.be/XlgWbKK2J9o
 
 ## [Ripples](/ripples/)
-Ripples made from expanding dot circles that get deleted when they collect. Video: 
+Ripples made from expanding dot circles that get deleted when they collect. Video: https://youtu.be/rqoi_fCQEmE
 
 ## [Snowing Build Up](/snowingBuildUp/)
 Randomly generated snowflakes fall and build up at the bottom. Video: https://youtu.be/IY_xDrwEOgk
