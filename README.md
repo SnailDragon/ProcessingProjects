@@ -45,8 +45,16 @@ Basic project is a lissajous curve (https://en.wikipedia.org/wiki/Lissajous_curv
 ## [More Wonky Orbits](/morewonkyorbits/)
 Same as [Wonky Orbits](/wonkyorbits/) but with all of the circles circling with the path created by something like r = cos(0.5 * theta). Video: https://youtu.be/BJSpUPocrBo 
 
+## [myFlowField](/myflowfield/)
+IN PROGRESS - currently displays slope as a line segment at each coordinate.
+
 ## [Orbits on Orbits](/orbitsonorbits/)
 Base project for other orbit-themed projects. Honestly a mess. Video: none. 
+
+## Pollock Painting ([Random](/pollockPainting/) and [Spread](/pollockPaintingSpread/))
+Project inspired by the works of [Jackson Pollock](https://en.wikipedia.org/wiki/Jackson_Pollock) done in his drip painting style. Random (Red) places drips randomly and Spread (Grayscale) places drips connected to other drips. 
+* Red Video: https://youtu.be/njTAZLB0jiQ 
+* Grayscale Video: https://youtu.be/x5kA_GS2VI4
 
 ## [Random Connnect The Dots](/randomConnectTheDots/)
 A given number of dots are generated and then they are connected to their neighbors. Image generation concept for future videos.
