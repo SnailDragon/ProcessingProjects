@@ -42,6 +42,10 @@ A terminating line (16000 mini-segments) that reflects off the walls starting fr
 Basic project is a lissajous curve (https://en.wikipedia.org/wiki/Lissajous_curve) with the parametric --> x = A * sin(a*t+c) y = B * sin(b*t) (t = i) increasing the 'c' value. Video: https://youtu.be/8zjWcnMuFd0
 * [Lissajous Curve 1 (2)](/lissajousCurvesOne/) manipulates the other variables as well. Video: https://youtu.be/Y7pMGQIZLps
 
+## [Maze Generators](/MazeGenerators/)
+A collection of implementations of different maze generators, most of which I learned about [here](https://en.wikipedia.org/wiki/Maze_generation_algorithm).
+* [RandomDFS](/MazeGenerators/RandomDFS/) - A stack implementation of the randomized depth-first search algorithm
+
 ## [More Wonky Orbits](/morewonkyorbits/)
 Same as [Wonky Orbits](/wonkyorbits/) but with all of the circles circling with the path created by something like r = cos(0.5 * theta). Video: https://youtu.be/BJSpUPocrBo 
 
